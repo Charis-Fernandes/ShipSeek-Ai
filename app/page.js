@@ -1,101 +1,87 @@
+"use client";
+
+import React from "react";
 import Image from "next/image";
 
-export default function Home() {
+const ShipSeekAI = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+    <div className="bg-black text-white min-h-screen flex flex-col items-center">
+      <header className="w-full flex justify-between items-center p-4 bg-gray-900">
+        <div className="flex items-center gap-2">
+          <Image
+            src="/Ship.png"
+            alt="ShipSeek AI Logo"
+            width={40}
+            height={40}
+          />
+          {/* Logo Image */}
+          <button className="text-lg font-bold">ShipSeekAI</button>
+        </div>
+        <nav className="flex gap-4">
+          <a href="#" className="text-gray-300 hover:text-white">
+            Home
           </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            About Us
+          </a>
+          <a href="#" className="text-gray-300 hover:text-white">
+            History
+          </a>
+        </nav>
+        <button className="bg-green-500 px-4 py-2 rounded hover: ">
+          Register
+        </button>
+      </header>
+
+      <main className="text-center p-8">
+        <h1 className="text-4xl font-bold">
+          Welcome to <span className="text-green-400">ShipSeek-AI</span>
+        </h1>
+        <p className="mt-4 text-lg max-w-2xl">
+          ShipSeek AI uses deep learning and satellite imagery to detect and
+          analyze ships in real time. Powered by{" "}
+          <span className="text-blue-400">U-Net</span> and{" "}
+          <span className="text-blue-400">AI-driven heatmaps</span>, it provides
+          accurate vessel tracking for maritime surveillance, logistics, and
+          research. Get precise ship insights—fast and reliable!
+        </p>
+      </main>
+
+      <section className="bg-gray-800 p-8 w-3/4 flex flex-col items-center rounded-lg">
+        <div className="bg-gray-700 w-64 h-80 flex items-center justify-center rounded-lg">
+          <span className="text-gray-400">Nothing to see here yet!</span>
+        </div>
+        <p className="text-gray-400 mt-2">
+          Start by uploading your first image for cropping
+        </p>
+        <button className="mt-4 bg-green-500 px-6 py-2 rounded">Submit</button>
+      </section>
+
+      <footer className="bg-gray-900 p-6 mt-8 w-full flex justify-between">
+        <div>
+          <p className="text-green-400">Call for inquiry</p>
+          <p>+257 388-6895</p>
+        </div>
+        <div>
+          <p className="text-green-400">Send us email</p>
+          <p>altontheGOAT@gmail.com</p>
+        </div>
+        <div>
+          <p className="text-green-400">Logo</p>
+          <p>ShipseekAI</p>
+        </div>
+        <div>
+          <p className="text-green-400">More to know about us:</p>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/alton-fernandes"
+            className="text-blue-400 block"
           >
-            Read our docs
+            LinkedIn
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
       </footer>
     </div>
   );
-}
+};
+
+export default ShipSeekAI;
