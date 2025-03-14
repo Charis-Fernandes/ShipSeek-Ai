@@ -18,13 +18,13 @@ const ShipSeekAI = () => {
           <button className="text-lg font-bold">ShipSeekAI</button>
         </div>
         <nav className="flex gap-4">
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="Home" className="text-gray-300 hover:text-white">
             Home
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="About" className="text-gray-300 hover:text-white">
             About Us
           </a>
-          <a href="#" className="text-gray-300 hover:text-white">
+          <a href="History" className="text-gray-300 hover:text-white">
             History
           </a>
         </nav>
