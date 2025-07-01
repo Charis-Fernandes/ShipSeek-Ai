@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚢 ShipSeek-Ai
 
-## Getting Started
+A collaborative AI project by SWAIN DBRITTO, KEITH FERNANDES, ALTON FERNANDES, and CHARIS FERNANDES.
 
-First, run the development server:
+## 🌊 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ShipSeek-Ai is a Jupyter Notebook-driven project focused on analyzing and deriving insights from maritime or shipping-related data. Our team leverages Python and machine learning to uncover trends, make predictions, and visualize complex datasets.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 📊 Interactive Jupyter Notebooks for data exploration and analysis
+- 🤖 Machine Learning models for predictive insights
+- 📈 Clear visualizations to aid understanding
+- 📝 Well-documented, reproducible code
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- [Python 3.x](https://www.python.org/)
+- [Jupyter Notebook](https://jupyter.org/)
+- Recommended: Install dependencies listed in `requirements.txt`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Charis-Fernandes/ShipSeek-Ai.git
+   cd ShipSeek-Ai
+   ```
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   > If `requirements.txt` is missing, try:
+   ```bash
+   pip install numpy pandas matplotlib scikit-learn jupyter
+   ```
 
-## Deploy on Vercel
+3. **Start Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
+   Open the `.ipynb` files to explore and run analyses.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Open your desired notebook in Jupyter.
+- Run cells step-by-step and follow the markdown explanations.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for improvements.
+
+## 👥 Authors
+
+- SWAIN DBRITTO
+- KEITH FERNANDES
+- ALTON FERNANDES
+- CHARIS FERNANDES
+
+## 📄 License
+
+[MIT](LICENSE) (or specify your license here)
+
+---
+Happy analyzing! 🚢📊
